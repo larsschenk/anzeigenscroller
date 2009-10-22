@@ -10,7 +10,9 @@
 // execute your scripts when the DOM is ready. this is a good habit 
 $(function() { 
     // initialize scrollable 
-	$("div.scrollable").scrollable().autoscroll({autoplay: true});
+	$("div.scrollable").scrollable({clickable: false, size: 2})
+					   .circular()
+					   .autoscroll({loop: true});
 }); 
 </script>
 
@@ -27,27 +29,15 @@ $(function() {
 
 	    <!-- root element for the items --> 
 	    <div class="items"> 
-
-	        <!-- 1-5 --> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" /></div>
-	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" /></div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" /></div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" /></div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" /></div> 
-
-	        <!-- 5-10 --> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" /></div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" /></div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" /></div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" /></div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" /></div> 
-
-	        <!-- 10-15 --> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" />11</div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" />12</div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" />13</div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" />14</div> 
-	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" />15</div>
+	        <img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" />
+	        <img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" />
+	        <img src="http://www.ln-online.de/bilder/beilage_gastro_spezial.jpg" />
+	        <img src="http://www.ln-online.de/bilder/teaser_hghg.jpg" />
+	        <img src="http://www.ln-online.de/bilder/deluex_oktober.jpg" />
+	        <img src="http://www.ln-online.de/bilder/15_Jahre_MuK.jpg" />
+	        <img src="http://www.ln-online.de/bilder/beilage_berufswelt_145.jpg" />
+	        <img src="http://www.ln-online.de/bilder/beilage_vfb.jpg" />
+	        <img src="http://www.ln-online.de/kunden/bilder/titelkopfbanner_spk.gif" />
 	    </div> <!--- /items -->
 
 	</div> <!-- scrollable --> 
