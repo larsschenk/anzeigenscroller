@@ -1,3 +1,59 @@
-This is the demo for a scrolling ads:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Demo - Anzeigen Scroller bzw. Slider via jquery Tools</title>
 
-TODO - place code here.
+<link rel="stylesheet" type="text/css" href="scrollable-horizontal.css" />
+<script src="http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"></script>
+
+<script> 
+// execute your scripts when the DOM is ready. this is a good habit 
+$(function() { 
+    // initialize scrollable 
+	$("div.scrollable").scrollable().autoscroll({autoplay: true});
+}); 
+</script>
+
+</head>
+
+<body>
+	Demo f&uuml;r Anzeigen scroller bzw. Slider via jquery:<br />
+	
+	<!-- "previous page" action --> 
+	<a class="prevPage browse left"></a> 
+
+	<!-- root element for scrollable --> 
+	<div class="scrollable">     
+
+	    <!-- root element for the items --> 
+	    <div class="items"> 
+
+	        <!-- 1-5 --> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" /></div>
+	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" /></div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" /></div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" /></div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" /></div> 
+
+	        <!-- 5-10 --> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" /></div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" /></div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" /></div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" /></div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" /></div> 
+
+	        <!-- 10-15 --> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" />11</div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" />12</div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" />13</div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_vorteilsmagazin.jpg" />14</div> 
+	        <div><img src="http://www.ln-online.de/bilder/beilage_lesen.jpg" />15</div>
+	    </div> <!--- /items -->
+
+	</div> <!-- scrollable --> 
+
+	<!-- "next page" action --> 
+	<a class="nextPage browse right"></a>
+	
+</body>
+</html>

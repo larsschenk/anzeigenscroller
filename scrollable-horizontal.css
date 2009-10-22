@@ -1,0 +1,73 @@
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 680px;
+	height:250px;
+
+	/* custom decorations */
+	border:1px solid #ccc;
+	background:url(/img/global/gradient/h300.png) repeat-x;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+/* single scrollable item */
+.scrollable img {
+	float:left;
+	margin:20px 5px 20px 21px;
+	background-color:#fff;
+	padding:2px;
+	border:1px solid #ccc;
+	cursor:pointer;
+	width:145px;
+	height:200px;
+	
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+/* 
+    a single item. must be floated in horizontal scrolling. 
+    typically, this element is the one that *you* will style 
+    the most. 
+*/ 
+div.scrollable div.items div { 
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+    float:left; 
+	margin-right:8px;
+	width:145px;
+}
+
+.scrollable_text {
+font-family:Arial,Helvetica,sans-serif;
+font-size:11px;
+line-height:14px;
+}
+
+/* active item */ 
+.scrollable .active {
+	border:2px solid #000;
+	z-index:9999;
+	position:relative;
+}
