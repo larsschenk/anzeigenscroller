@@ -8,15 +8,15 @@
 			<key>filename</key>
 			<string>scrollable-horizontal.css</string>
 			<key>lastUsed</key>
-			<date>2009-10-22T19:59:53Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2009-10-23T00:18:46Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>anzeigenscroller.html</string>
 			<key>lastUsed</key>
-			<date>2009-10-22T19:59:52Z</date>
+			<date>2009-10-23T00:20:41Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -26,6 +26,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{56, 53}, {874, 825}}</string>
+	<string>{{46, 33}, {987, 841}}</string>
 </dict>
 </plist>

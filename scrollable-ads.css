@@ -1,9 +1,8 @@
-
 /*
-	root element for the scrollable.
+	root element for the scrollable-ads.
 	when scrolling occurs this element stays still.
 */
-.scrollable {
+.scrollable-ads {
 
 	/* required settings */
 	position:relative;
@@ -22,7 +21,7 @@
 	it's enough that you set the width and height for the root element and
 	not for this element.
 */
-.scrollable .items {
+.scrollable-ads .items {
 	/* this cannot be too large */
 	width:20000em;
 	position:absolute;
@@ -30,7 +29,7 @@
 }
 
 /* single scrollable item */
-.scrollable img {
+.scrollable-ads img {
 	float:left;
 	margin:5px 5px 5px 5px;
 	background-color:#fff;
@@ -48,7 +47,7 @@
     a single item. must be floated in horizontal scrolling. 
     typically, this element is the one that *you* will style 
     the most. 
-div.scrollable div.items div { 
+div.scrollable-ads div.items div { 
 	-moz-border-radius-bottomleft:5px;
 	-moz-border-radius-bottomright:5px;
 	-moz-border-radius-topleft:5px;
@@ -59,17 +58,3 @@ div.scrollable div.items div {
 }
 */ 
 
-/*
-.scrollable_text {
-font-family:Arial,Helvetica,sans-serif;
-font-size:11px;
-line-height:14px;
-}
-*/
-/* active item 
-.scrollable .active {
-	border:2px solid #000;
-	z-index:9999;
-	position:relative;
-}
-*/ 

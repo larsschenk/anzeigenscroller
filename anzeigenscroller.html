@@ -3,16 +3,16 @@
 <head>
 <title>Demo - Anzeigen Scroller bzw. Slider via jquery Tools</title>
 
-<link rel="stylesheet" type="text/css" href="scrollable-horizontal.css" />
+<link rel="stylesheet" type="text/css" href="scrollable-ads.css" />
 <script src="http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"></script>
 
 <script> 
 // execute your scripts when the DOM is ready. this is a good habit 
 $(function() { 
     // initialize scrollable 
-	$("div.scrollable").scrollable({clickable: false, size: 2})
-					   .circular()
-					   .autoscroll({loop: true});
+	$("div.scrollable-ads").scrollable({clickable: false, size: 2})
+					       .circular()
+					       .autoscroll({loop: true});
 }); 
 </script>
 
@@ -21,11 +21,8 @@ $(function() {
 <body>
 	Demo f&uuml;r Anzeigen scroller bzw. Slider via jquery:<br />
 	
-	<!-- "previous page" action --> 
-	<a class="prevPage browse left"></a> 
-
-	<!-- root element for scrollable --> 
-	<div class="scrollable">     
+	<!-- root element for scrollable-ads --> 
+	<div class="scrollable-ads">     
 
 	    <!-- root element for the items --> 
 	    <div class="items"> 
@@ -40,10 +37,7 @@ $(function() {
 	        <img src="http://www.ln-online.de/kunden/bilder/titelkopfbanner_spk.gif" />
 	    </div> <!--- /items -->
 
-	</div> <!-- scrollable --> 
+	</div> <!-- scrollable-ads --> 
 
-	<!-- "next page" action --> 
-	<a class="nextPage browse right"></a>
-	
 </body>
 </html>
