@@ -7,11 +7,8 @@
 	/* required settings */
 	position:relative;
 	overflow:hidden;
-	width: 325px;
+	width: 309px;
 	height:220px;
-
-	/* custom decorations */
-	border:1px solid #ccc;
 }
 
 /*
@@ -44,13 +41,11 @@
 */
 div.scrollable-ads div.items div { 
     float:left; 
-	margin:5px 5px 5px 5px;
-	padding:2px;
+	margin:2px 2px 2px 2px;
+	padding:1px;
 	border:1px solid #ccc;
 	width:147px;
 	height:202px;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 }
- 
-

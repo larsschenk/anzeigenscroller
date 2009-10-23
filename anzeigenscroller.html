@@ -6,15 +6,17 @@
 <link rel="stylesheet" type="text/css" href="scrollable-ads.css" />
 <script src="http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"></script>
 
-<script> 
+<script>
+jQuery.noConflict();
 // execute your scripts when the DOM is ready. this is a good habit 
-$(function() { 
+jQuery(function() { 
     // initialize scrollable 
-	$("div.scrollable-ads").scrollable({clickable: false, size: 2})
+	jQuery("div.scrollable-ads").scrollable({clickable: false, size: 2})
 					       .circular()
 					       .autoscroll({loop: true});
 }); 
 </script>
+
 
 </head>
 
