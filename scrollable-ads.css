@@ -12,7 +12,6 @@
 
 	/* custom decorations */
 	border:1px solid #ccc;
-	// background:url(/img/global/gradient/h300.png) repeat-x;
 }
 
 /*
@@ -31,30 +30,27 @@
 /* single scrollable item */
 .scrollable-ads img {
 	float:left;
-	margin:5px 5px 5px 5px;
 	background-color:#fff;
-	padding:2px;
 	border:1px solid #ccc;
-	// cursor:pointer;
 	width:145px;
 	height:200px;
 	
+}
+
+/*
+    a single item. must be floated in horizontal scrolling. 
+    typically, this element is the one that *you* will style 
+    the most.  
+*/
+div.scrollable-ads div.items div { 
+    float:left; 
+	margin:5px 5px 5px 5px;
+	padding:2px;
+	border:1px solid #ccc;
+	width:147px;
+	height:202px;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 }
-
-/* 
-    a single item. must be floated in horizontal scrolling. 
-    typically, this element is the one that *you* will style 
-    the most. 
-div.scrollable-ads div.items div { 
-	-moz-border-radius-bottomleft:5px;
-	-moz-border-radius-bottomright:5px;
-	-moz-border-radius-topleft:5px;
-	-moz-border-radius-topright:5px;
-    float:left; 
-	margin-right:5px;
-	width:145px;
-}
-*/ 
+ 
 
