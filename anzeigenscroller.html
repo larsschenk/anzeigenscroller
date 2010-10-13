@@ -4,16 +4,15 @@
 <title>Demo - Anzeigen Scroller bzw. Slider via JQuery Tools</title>
 
 <link rel="stylesheet" type="text/css" href="scrollable-ads.css" />
-<script src="http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 
 <script>
 jQuery.noConflict();
 // execute your scripts when the DOM is ready. this is a good habit 
 jQuery(function() { 
     // initialize scrollable 
-	jQuery("div.scrollable-ads").scrollable({clickable: false, size: 2})
-					       .circular()
-					       .autoscroll({loop: true});
+	jQuery("div.scrollable-ads").scrollable({circular: true, clickable: false, size: 2})
+					       		.autoscroll({loop: true});
 }); 
 </script>
 
